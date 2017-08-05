@@ -1,0 +1,67 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AArnott/vso-agent-tasks/9b41d803a/tasks.schema.json",
+    "id": "9175fd51-4f41-459e-8c8d-b01e2b85bdcb",
+    "name": "TheKvkBlogTask",
+    "friendlyName": "The KVK Blog Task",
+    "description": "Simple build/deployment task for Visual Studio Team Services",
+    "helpMarkDown": "[More Information](https://github.com/kasunkv/custom-vsts-task-example)",
+    "category": "Utility",
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "runsOn": [
+        "Agent",
+        "MachineGroup"
+    ],
+    "author": "Kasun Kodagoda",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "demands": [
+        "npm"
+    ],
+    "minimumAgentVersion": "1.92.0",
+    "groups": [
+        {
+            "name": "group1",
+            "displayName": "Group 1",
+            "isExpanded": true
+        },
+        {
+            "name": "group2",
+            "displayName": "Group 2",
+            "isExpanded": false
+        }        
+    ],
+    "inputs": [
+        {
+            "name": "FirstName",
+            "type": "string",
+            "label": "First Name",
+            "required": true,
+            "defaultValue": "",
+            "groupName": "group1",
+            "helpMarkDown": "Add your *First Name* here. (required)"
+        },
+        {
+            "name": "LastName",
+            "type": "string",
+            "label": "Last Name",
+            "required": false,
+            "defaultValue": "",
+            "groupName": "group2",
+            "helpMarkDown": "Add your *Last Name* here."
+        }
+    ],
+    "instanceNameFormat": "The KVK Blog Custom Task",
+    "execution": {
+        "Node": {
+            "target": "the-kvk-blog-task.js",
+            "argumentFormat": ""
+        }
+    },
+    "messages": { }
+}
