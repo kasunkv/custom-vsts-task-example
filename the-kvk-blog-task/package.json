@@ -1,0 +1,24 @@
+{
+  "name": "the-kvk-blog-task",
+  "version": "1.0.0",
+  "description": "Simple build/deployment task for Visual Studio Team Services",
+  "main": "the-kvk-blog-task.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasunkv/custom-vsts-task-example.git"
+  },
+  "keywords": [
+    "vsts",
+    "devops",
+    "custom-task"
+  ],
+  "author": "Kasun Kodagoda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kasunkv/custom-vsts-task-example/issues"
+  },
+  "homepage": "https://github.com/kasunkv/custom-vsts-task-example#readme"
+}
