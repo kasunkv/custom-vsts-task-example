@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/kasunkv/custom-vsts-task-example/issues"
   },
-  "homepage": "https://github.com/kasunkv/custom-vsts-task-example#readme"
+  "homepage": "https://github.com/kasunkv/custom-vsts-task-example#readme",
+  "dependencies": {
+    "vsts-task-lib": "^2.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.19"
+  }
 }
